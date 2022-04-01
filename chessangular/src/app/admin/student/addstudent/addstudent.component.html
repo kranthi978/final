@@ -1,0 +1,46 @@
+<div class="form-froup row">
+    <table width="90%">
+        <tr>
+            <td><input type="text" class="form-control" id="firstname" [(ngModel)]="firstname"
+                placeholder="Enter Name"></td>
+            <td> <input type="text" class="form-control" id="phonenumber1" [(ngModel)]="mobilenumber"
+                placeholder="Enter MobileNumber"></td>
+            <td> <input type="text" class="form-control" id="emailid" [(ngModel)]="email"
+                placeholder="Enter email"></td>
+        </tr>
+        <tr>
+            <td> <input type="text" class="form-control" id="enrolledcourse" [(ngModel)]="enrolledcourse"
+                placeholder="Enter course"></td>
+
+        </tr>
+    </table>
+
+    <div class="col-sm-10">
+        
+    </div>
+    <div class="col-sm-10">
+       
+    </div>
+    <div class="col-sm-10">
+       
+    </div>
+    <div class="col-sm-10">
+    </div>
+    
+</div>
+
+<button (click)="addstudent()" *ngIf="std.studentId==0" id="addStudent" class="btn btn-primary">
+    Add
+</button>
+
+<button (click)="updatestudent()" *ngIf="std.studentId!=0"  class="btn btn-primary">
+    Update
+</button>
+
+
+
+
+
+
+
+
